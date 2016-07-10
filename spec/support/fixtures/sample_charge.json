@@ -1,0 +1,9 @@
+{
+  "charge": {
+    "amount": "5000.0",
+    "currency": "MXN",
+    "description": "Some test description",
+    "reference_id": "65465",
+    "card": "40ac0e19b4318c56e76fade3eff2bce6"
+  }
+}

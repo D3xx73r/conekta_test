@@ -13,6 +13,7 @@ RSpec.describe Card, type: :model do
 
   it { is_expected.to have_one(:card_token) }
   it { is_expected.to have_one(:address) }
+  it { is_expected.to have_many(:charges) }
 
   describe "validations" do
     it "adds error to base if expiration date is in the past" do

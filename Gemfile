@@ -27,6 +27,8 @@ gem 'gibberish'
 
 gem 'active_model_serializers'
 
+gem 'puma'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -35,6 +37,7 @@ end
 
 group :test do
   gem 'mongoid-rspec', '3.0.0'
+  gem 'database_cleaner'
 end
 
 group :development do

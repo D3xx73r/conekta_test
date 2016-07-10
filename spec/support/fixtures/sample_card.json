@@ -1,0 +1,16 @@
+{
+  "card": {
+    "cardholder_name": "Peter Parker",
+    "bin": "4242424242424242",
+    "exp_month": "01",
+    "exp_year": "2018",
+    "adress": {
+      "street_1": "Sample street",
+      "street_2": "Sample street",
+      "city": "Mexicali",
+      "state": "Baja California",
+      "zip_code": "212121",
+      "country": "Mexico"
+    }
+  }
+}

@@ -3,7 +3,7 @@ class Card
 
   field :cardholder_name, type: String
   field :bin, type: Mongoid::EncryptedString
-  field :last_four_digits, type: String
+  field :last_four_digits, type: Mongoid::EncryptedString
   field :exp_month, type: String
   field :exp_year, type: String
   field :schema, type: String
@@ -15,13 +15,14 @@ class Card
 
   has_one :card_token
   has_one :address
+  has_many :charges
 
   accepts_nested_attributes_for :address
 
   before_save :set_brand
 
   def create_token
-    card_token || CardToken.create
+    card_token || CardToken.create(card: self)
   end
 
   private
